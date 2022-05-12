@@ -23,7 +23,6 @@ export default function SearchScreen(props) {
             
                 onChangeText={(text) => {
                     getPokemonInfo('https://pokeapi.co/api/v2/pokemon/' + text.toLowerCase()).then(datas => {
-                        console.log(typeof datas);
                         if (typeof datas == "object"){
                             setPokemon(datas)
 
