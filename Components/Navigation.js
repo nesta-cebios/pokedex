@@ -8,6 +8,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import "react-native-gesture-handler";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import SearchScreen from './Pages/SeachScreen';
+import SettingScreen from './Pages/SettingScreen';
 
 
 
@@ -32,12 +33,20 @@ function SearchStack() {
     );
 }
 
+function SettingStack() {
+    return (
+        <Stack.Navigator>
+            <Stack.Screen name="Paramètres" component={SettingScreen} />
+        </Stack.Navigator>
+    );
+}
+
 export default function Navigation() {
     return (
         <NavigationContainer>
             <Tab.Navigator
             screenOptions={{
-                tabBarActiveTintColor: "#b00a00",
+                tabBarActiveTintColor: "#fab400",
             }}
             >
                 <Tab.Screen
@@ -57,6 +66,16 @@ export default function Navigation() {
                         headerShown:false,
                         tabBarIcon: ({tintColor}) => (
                             <Icon name="magnify" size={25}/>
+                        )
+                    }}
+                />
+                <Tab.Screen
+                    name="Paramètres"
+                    component={SettingStack}
+                    options={{
+                        headerShown:false,
+                        tabBarIcon: ({tintColor}) => (
+                            <Icon name="cog" size={25}/>
                         )
                     }}
                 />
