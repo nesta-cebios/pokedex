@@ -15,8 +15,8 @@ export default function SettingScreen(props) {
             <View style={{padding: 10, marginTop: 30, display: 'flex', alignItems: 'center'}}>
                 <Text style={{fontWeight: '800', marginBottom: 10}}>Autorisez-vous l'application à collecter des données sur vos préférences ?</Text>
                 <Switch
-                    trackColor={{ false: "#767577", true: "#9F9F9F" }}
-                    thumbColor={isEnabled ? "#fab400" : "#f4f3f4"}
+                    trackColor={{ false: "#767577", true: "#fab400" }}
+                    thumbColor={isEnabled ? "#f4f3f4" : "#f4f3f4"}
                     ios_backgroundColor="#3e3e3e"
                     onValueChange={toggleSwitch}
                     value={isEnabled}
@@ -26,8 +26,8 @@ export default function SettingScreen(props) {
             <View style={{padding: 10, marginTop: 30, display: 'flex', alignItems: 'center'}}>
                 <Text style={{fontWeight: '800', marginBottom: 10}}>Autorisez-vous la rotation automatique ?</Text>
                 <Switch
-                    trackColor={{ false: "#767577", true: "#9F9F9F" }}
-                    thumbColor={isEnabled2 ? "#fab400" : "#f4f3f4"}
+                    trackColor={{ false: "#767577", true: "#fab400" }}
+                    thumbColor={isEnabled2 ? "#f4f3f4" : "#f4f3f4"}
                     ios_backgroundColor="#3e3e3e"
                     onValueChange={toggleSwitch2}
                     value={isEnabled2}
