@@ -50,7 +50,7 @@ export default function Pokemon(props) {
                     
                     <Button
                         onPress={() => {
-                            navigation.navigate('PokemonScreen', {datas : pokemonSpecs});
+                            console.log('oui')
                         }}
                         title="Ajouter à mon équipe"
                     />
