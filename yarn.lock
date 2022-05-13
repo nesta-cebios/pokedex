@@ -1061,6 +1061,13 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@egjs/hammerjs@^2.0.17":
+  version "2.0.17"
+  resolved "https://registry.yarnpkg.com/@egjs/hammerjs/-/hammerjs-2.0.17.tgz#5dc02af75a6a06e4c2db0202cae38c9263895124"
+  integrity sha512-XQsZgjm2EcVUiZQf11UBJQfmZeEmOW8DpI1gsFeln6w0ae0ii4dMQEQ0kjl6DspdWX1aGY1/loyXnP0JS06e/A==
+  dependencies:
+    "@types/hammerjs" "^2.0.36"
+
 "@expo/config-plugins@4.0.18", "@expo/config-plugins@^4.0.2":
   version "4.0.18"
   resolved "https://registry.npmjs.org/@expo/config-plugins/-/config-plugins-4.0.18.tgz"
@@ -1104,6 +1111,27 @@
     xcode "^3.0.1"
     xml2js "0.4.23"
 
+"@expo/config-plugins@^4.0.14":
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-4.1.4.tgz#08e1a6314dc0f96cd165a748b5997b5ec75a84d0"
+  integrity sha512-fkOjXnSieQfVSWVLKhst0DnCAyeHksvWky1CldFCQllhDB1HHBiP09Z8pamVB783n3qr/1HNZiSp6k2iUcaSoA==
+  dependencies:
+    "@expo/config-types" "^45.0.0"
+    "@expo/json-file" "8.2.36"
+    "@expo/plist" "0.0.18"
+    "@expo/sdk-runtime-versions" "^1.0.0"
+    "@react-native/normalize-color" "^2.0.0"
+    chalk "^4.1.2"
+    debug "^4.3.1"
+    find-up "~5.0.0"
+    getenv "^1.0.0"
+    glob "7.1.6"
+    resolve-from "^5.0.0"
+    semver "^7.3.5"
+    slash "^3.0.0"
+    xcode "^3.0.1"
+    xml2js "0.4.23"
+
 "@expo/config-types@^43.0.1":
   version "43.0.1"
   resolved "https://registry.npmjs.org/@expo/config-types/-/config-types-43.0.1.tgz"
@@ -1113,6 +1141,11 @@
   version "44.0.0"
   resolved "https://registry.npmjs.org/@expo/config-types/-/config-types-44.0.0.tgz"
   integrity sha512-d+gpdKOAhqaD5RmcMzGgKzNtvE1w+GCqpFQNSXLliYlXjj+Tv0eL8EPeAdPtvke0vowpPFwd5McXLA90dgY6Jg==
+
+"@expo/config-types@^45.0.0":
+  version "45.0.0"
+  resolved "https://registry.yarnpkg.com/@expo/config-types/-/config-types-45.0.0.tgz#963c2fdce8fbcbd003758b92ed8a25375f437ef6"
+  integrity sha512-/QGhhLWyaGautgEyU50UJr5YqKJix5t77ePTwreOVAhmZH+ff3nrrtYTTnccx+qF08ZNQmfAyYMCD3rQfzpiJA==
 
 "@expo/config@6.0.6":
   version "6.0.6"
@@ -1166,6 +1199,15 @@
     json5 "^1.0.1"
     write-file-atomic "^2.3.0"
 
+"@expo/json-file@8.2.36":
+  version "8.2.36"
+  resolved "https://registry.yarnpkg.com/@expo/json-file/-/json-file-8.2.36.tgz#62a505cb7f30a34d097386476794680a3f7385ff"
+  integrity sha512-tOZfTiIFA5KmMpdW9KF7bc6CFiGjb0xnbieJhTGlHrLL+ps2G0OkqmuZ3pFEXBOMnJYUVpnSy++52LFxvpa5ZQ==
+  dependencies:
+    "@babel/code-frame" "~7.10.4"
+    json5 "^1.0.1"
+    write-file-atomic "^2.3.0"
+
 "@expo/metro-config@~0.2.6":
   version "0.2.8"
   resolved "https://registry.npmjs.org/@expo/metro-config/-/metro-config-0.2.8.tgz"
@@ -1190,6 +1232,15 @@
   version "0.0.17"
   resolved "https://registry.npmjs.org/@expo/plist/-/plist-0.0.17.tgz"
   integrity sha512-5Ul3d/YOYE6mfum0jCE25XUnkKHZ5vGlU/X2275ZmCtGrpRn1Fl8Nq+jQKSaks3NqTfxdyXROi/TgH8Zxeg2wg==
+  dependencies:
+    "@xmldom/xmldom" "~0.7.0"
+    base64-js "^1.2.3"
+    xmlbuilder "^14.0.0"
+
+"@expo/plist@0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@expo/plist/-/plist-0.0.18.tgz#9abcde78df703a88f6d9fa1a557ee2f045d178b0"
+  integrity sha512-+48gRqUiz65R21CZ/IXa7RNBXgAI/uPSdvJqoN9x1hfL44DNbUoWHgHiEXTx7XelcATpDwNTz6sHLfy0iNqf+w==
   dependencies:
     "@xmldom/xmldom" "~0.7.0"
     base64-js "^1.2.3"
@@ -1532,6 +1583,11 @@
   integrity sha512-anKkLmZZ+xm4p8JWBf4hElkM4XR+EZeA2M9BAkkTldmcyDY4mbdIJnRghDJH3Ov5ooY7/UAoENtmdMSkaAd7Cw==
   dependencies:
     "@types/node" "*"
+
+"@types/hammerjs@^2.0.36":
+  version "2.0.41"
+  resolved "https://registry.yarnpkg.com/@types/hammerjs/-/hammerjs-2.0.41.tgz#f6ecf57d1b12d2befcce00e928a6a097c22980aa"
+  integrity sha512-ewXv/ceBaJprikMcxCmWU1FKyMAQ2X7a9Gtmzw8fcg2kIePI1crERDM818W+XYrxqdBBOdlf2rm137bU+BltCA==
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.4"
@@ -2611,12 +2667,12 @@ expo-modules-core@0.6.5:
     compare-versions "^3.4.0"
     invariant "^2.2.4"
 
-expo-screen-orientation@~4.1.1:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/expo-screen-orientation/-/expo-screen-orientation-4.1.2.tgz#52b0799adf2bf7c275bfca308a97797731fa9f53"
-  integrity sha512-ZK9JnIuys3bL0IPIkBazBwc6dZambm2xxu0TEV7HYtowb769XLTFOJgVttrpeNDMXEt/22+dhCE4ZFaPNu6JlA==
+expo-screen-orientation@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/expo-screen-orientation/-/expo-screen-orientation-4.2.0.tgz#e58da1056e01246a0e55f0c6965ae9b61926cb57"
+  integrity sha512-uKWu2sKDMjicDTc6gycAu3NOTNIBMXWBCxkvvYAgLKaYXDp4YN7d6yPQ0+U2z4w+0mFngJCgksxXA7/hHSZkwQ==
   dependencies:
-    "@expo/config-plugins" "^4.0.2"
+    "@expo/config-plugins" "^4.0.14"
 
 expo-status-bar@~1.2.0:
   version "1.2.0"
@@ -3053,7 +3109,7 @@ hoist-non-react-statics@^2.3.1:
   resolved "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz"
   integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
 
-hoist-non-react-statics@^3.3.2:
+hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
   integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -3642,7 +3698,7 @@ lodash.throttle@^4.1.1:
   resolved "https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz"
   integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
 
-lodash@^4.17.14, lodash@^4.17.15:
+lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -4587,6 +4643,17 @@ react-native-codegen@^0.0.6:
     flow-parser "^0.121.0"
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
+
+react-native-gesture-handler@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-2.4.2.tgz#de93760b0bc251d94e8ae692f9850ec3ed2e4f27"
+  integrity sha512-K3oMiQV7NOVB5RvNlxkyJxU1Gn6m1cYu53MoFA542FVDSTR491d1eQkWDdqy4lW52rfF7IK7eE1LCi+kTJx7jw==
+  dependencies:
+    "@egjs/hammerjs" "^2.0.17"
+    hoist-non-react-statics "^3.3.0"
+    invariant "^2.2.4"
+    lodash "^4.17.21"
+    prop-types "^15.7.2"
 
 react-native-safe-area-context@^3.3.2:
   version "3.3.2"

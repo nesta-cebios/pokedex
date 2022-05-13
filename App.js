@@ -1,14 +1,21 @@
 import React from "react";
 import { StyleSheet } from "react-native";
+import {useState} from 'react'
 
 import Navigation from "./Components/Navigation";
+import * as ScreenOrientation from 'expo-screen-orientation'
+
+
 
 export default function App() {
+  const [orientationIsLandscape,setOrientation]=useState(true)
+
   return (
     <Navigation></Navigation>
   )
 }
-  const styles = StyleSheet.create({
+
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
