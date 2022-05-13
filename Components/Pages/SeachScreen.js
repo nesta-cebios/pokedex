@@ -17,10 +17,10 @@ export default function SearchScreen(props) {
 
     return(
         <>
-            {/* Add a text input that search if a pokemon has that name and display it */}
-            <Text>Search a pokemon</Text>
-            <TextInput placeholder="Ex: Absol" 
+            <TextInput 
             
+                placeholder="Chercher un pokémon"
+                style={styles.input}
                 onChangeText={(text) => {
                     getPokemonInfo('https://pokeapi.co/api/v2/pokemon/' + text.toLowerCase()).then(datas => {
                         if (typeof datas == "object"){
@@ -35,12 +35,12 @@ export default function SearchScreen(props) {
             />
 
             <View style={styles.viewPokemon}>
-                <Sprite uri={ issetDatas ? pokemon.sprites.other.home.front_default : ''} size={75}></Sprite>
-
+                <Sprite uri={ issetDatas ? pokemon?.sprites?.other?.home?.front_default : 'https://static.wikia.nocookie.net/gaming-urban-legends/images/7/7c/MissingNo..webp/revision/latest?cb=20210429173552'} size={200}></Sprite>
+                
                 <Text style={styles.pokemonName}>{ issetDatas ? uppercaseFirstLetter(pokemon.name) : 'Missing N°'}</Text>
 
                 <Text>
-                    { issetDatas ? pokemon.types.map((type, index) => {
+                    { issetDatas ? pokemon?.types?.map((type, index) => {
                         return <Type key={type.slot}  type={type}></Type>
                     }) : null}
                 </Text>
@@ -64,11 +64,18 @@ const styles = StyleSheet.create({
     viewPokemon: {
         padding: 10,
         marginBottom: 10,
-        width: (width/2),
+        width: (width),
         backgroundColor: '#fff',
         alignItems: 'center',
     },
     pokemonName: {
         fontWeight: '700',
-    }
+    },
+    input: {
+        height: 40,
+        margin: 12,
+        borderWidth: 1,
+        padding: 10,
+        backgroundColor: '#fff',
+    },
 });

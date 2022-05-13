@@ -18,7 +18,7 @@ export default function Sprite(props) {
         <>
             <Image
                 style={styles.imgPokemon}
-                source={{uri}}
+                source={uri ? {uri} : null}
             />
         </>
     )       

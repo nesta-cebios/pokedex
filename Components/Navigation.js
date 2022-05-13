@@ -9,6 +9,7 @@ import "react-native-gesture-handler";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import SearchScreen from './Pages/SeachScreen';
 import SettingScreen from './Pages/SettingScreen';
+import TeamScreen from './Pages/TeamScreen';
 
 
 
@@ -19,7 +20,7 @@ const Tab = createBottomTabNavigator();
 function HomeStack() {
     return (
         <Stack.Navigator>
-            <Stack.Screen name="Accueil" component={HomeScreen} />
+            <Stack.Screen name="Pokédex" component={HomeScreen} />
             <Stack.Screen name="PokemonScreen" component={Pokemon} />
         </Stack.Navigator>
     );
@@ -29,6 +30,16 @@ function SearchStack() {
     return (
         <Stack.Navigator>
             <Stack.Screen name="Recherche" component={SearchScreen} />
+            <Stack.Screen name="PokemonScreen" component={Pokemon} />
+        </Stack.Navigator>
+    );
+}
+
+function TeamStack() {
+    return (
+        <Stack.Navigator>
+            <Stack.Screen name="Mon équipe" component={TeamScreen} />
+            <Stack.Screen name="PokemonScreen" component={Pokemon} />
         </Stack.Navigator>
     );
 }
@@ -36,7 +47,7 @@ function SearchStack() {
 function SettingStack() {
     return (
         <Stack.Navigator>
-            <Stack.Screen name="Paramètres" component={SettingScreen} />
+            <Stack.Screen name="Mes paramètres" component={SettingScreen} />
         </Stack.Navigator>
     );
 }
@@ -55,7 +66,7 @@ export default function Navigation() {
                     options={{
                         headerShown:false,
                         tabBarIcon: ({tintColor}) => (
-                            <Icon name="pokeball" size={25}/>
+                            <Icon name="home" size={25}/>
                         )
                     }}
                 />
@@ -68,6 +79,16 @@ export default function Navigation() {
                             <Icon name="magnify" size={25}/>
                         )
                     }}
+                />
+                <Tab.Screen
+                    name="Équipe"
+                    component={TeamStack}
+                    options={{
+                        headerShown:false,
+                        tabBarIcon: ({tintColor}) => (
+                            <Icon name="pokeball" size={25}/>
+                            )
+                        }}
                 />
                 <Tab.Screen
                     name="Paramètres"
